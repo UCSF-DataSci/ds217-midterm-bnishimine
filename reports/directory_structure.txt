@@ -1,0 +1,24 @@
+total 224
+drwxr-xr-x@ 23 brian  staff    736 Oct 15 13:33 .
+drwxr-xr-x@ 13 brian  staff    416 Oct 15 13:33 ..
+drwxr-xr-x@ 12 brian  staff    384 Oct 15 13:13 .git
+drwxr-xr-x@  4 brian  staff    128 Oct 15 13:13 .github
+-rw-r--r--   1 brian  staff      8 Oct 15 13:12 .gitignore
+-rw-r--r--   1 brian  staff  14662 Oct 15 13:12 GRADING_SPEC.md
+-rw-r--r--   1 brian  staff  12595 Oct 15 13:12 README.md
+drwxr-xr-x@  3 brian  staff     96 Oct 15 13:13 __pycache__
+drwxr-xr-x@  3 brian  staff     96 Oct 15 13:32 data
+drwxr-xr-x@  9 brian  staff    288 Oct 15 13:33 datasci-217
+-rwxr-xr-x   1 brian  staff  13266 Oct 15 13:12 generate_data.py
+drwxr-xr-x@  2 brian  staff     64 Oct 15 13:32 output
+-rwxr-xr-x   1 brian  staff    693 Oct 15 13:35 q1_setup_project.sh
+-rw-r--r--   1 brian  staff     58 Oct 15 13:12 q2_config.txt
+-rwxr-xr-x   1 brian  staff   2901 Oct 15 13:12 q2_process_metadata.py
+-rw-r--r--   1 brian  staff   5849 Oct 15 13:12 q3_data_utils.py
+-rw-r--r--   1 brian  staff   7309 Oct 15 13:12 q4_exploration.ipynb
+-rw-r--r--   1 brian  staff   4824 Oct 15 13:12 q5_missing_data.ipynb
+-rw-r--r--   1 brian  staff   6194 Oct 15 13:12 q6_transformation.ipynb
+-rw-r--r--   1 brian  staff   4995 Oct 15 13:12 q7_aggregation.ipynb
+-rwxr-xr-x   1 brian  staff    908 Oct 15 13:12 q8_run_pipeline.sh
+drwxr-xr-x@  3 brian  staff     96 Oct 15 13:35 reports
+-rw-r--r--   1 brian  staff     91 Oct 15 13:12 requirements.txt
