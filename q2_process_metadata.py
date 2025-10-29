@@ -53,21 +53,21 @@ def validate_config(config: dict) -> dict:
     for key in config:
         config[key] = int(config[key])
 
-    if config['sample_data_rows'].isdigit() == False:
+    if config['sample_data_rows'].type() == int:
         guidelines['sample_data_rows'] = False
     elif config['sample_data_rows'] <= 0:
         guidelines['sample_data_rows'] = False
     else:
         guidelines['sample_data_rows'] = True
     
-    if config['sample_data_min'].isdigit() == False:
+    if config['sample_data_min'].type() == int:
         guidelines['sample_data_min'] = False
     elif config['sample_data_min'] < 1:
         guidelines['sample_data_min'] = False
     else:
         guidelines['sample_data_min'] = True
 
-    if config['sample_data_max'].isdigit() == False:
+    if config['sample_data_max'].type() == int:
         guidelines['sample_data_max'] = False
     elif config['sample_data_max'] <= config['sample_data_min']:
         guidelines['sample_data_max'] = False
