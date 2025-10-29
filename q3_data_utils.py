@@ -166,7 +166,7 @@ def transform_types(df: pd.DataFrame, type_map: dict) -> pd.DataFrame:
     """
     for col in type_map:
         if type_map[col] == 'datetime':
-            df[col] = pd.to_datetime(df[col])
+            df[col] = pd.to_datetime(df[col], format = 'mixed')
         elif type_map[col] == 'numeric':
             df[col] = pd.to_numeric(df[col])
         elif type_map[col] == 'category':
