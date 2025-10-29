@@ -12,5 +12,13 @@ echo "Starting clinical trial data pipeline..." > reports/pipeline_log.txt
 # TODO: Run analysis notebooks in order (q4-q7) using nbconvert with error handling
 # Use either `$?` or `||` operator to check exit codes and stop on failure
 # Add a log entry for each notebook execution or failure
-# jupyter nbconvert --execute --to notebook q4_exploration.ipynb
+jupyter nbconvert --execute --to notebook q4_exploration.ipynb
+
+jupyter nbconvert --execute --to notebook q5_missing_data.ipynb
+
+jupyter nbconvert --execute --to notebook q6_transformation.ipynb
+
+jupyter nbconvert --execute --to notebook q7_aggregation.ipynb
+
+
 echo "Pipeline complete!" >> reports/pipeline_log.txt
