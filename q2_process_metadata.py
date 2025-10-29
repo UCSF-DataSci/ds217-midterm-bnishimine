@@ -50,7 +50,9 @@ def validate_config(config: dict) -> dict:
     """
     # TODO: Implement with if/elif/else
     guidelines = {}
-    
+    for key in config:
+        config[key] = int(config[key])
+
     if config['sample_data_rows'].isdigit() == False:
         guidelines['sample_data_rows'] = False
     elif config['sample_data_rows'] <= 0:
