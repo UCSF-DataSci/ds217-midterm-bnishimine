@@ -51,21 +51,21 @@ def validate_config(config: dict) -> dict:
     # TODO: Implement with if/elif/else
     guidelines = {}
     
-    if config['sample_data_rows'] is not int:
+    if config['sample_data_rows'].isdigit() == False:
         guidelines['sample_data_rows'] = False
     elif config['sample_data_rows'] <= 0:
         guidelines['sample_data_rows'] = False
     else:
         guidelines['sample_data_rows'] = True
     
-    if config['sample_data_min'] is not int:
+    if config['sample_data_min'].isdigit() == False:
         guidelines['sample_data_min'] = False
     elif config['sample_data_min'] < 1:
         guidelines['sample_data_min'] = False
     else:
         guidelines['sample_data_min'] = True
 
-    if config['sample_data_max'] is not int:
+    if config['sample_data_max'].isdigit() == False:
         guidelines['sample_data_max'] = False
     elif config['sample_data_max'] <= config['sample_data_min']:
         guidelines['sample_data_max'] = False
