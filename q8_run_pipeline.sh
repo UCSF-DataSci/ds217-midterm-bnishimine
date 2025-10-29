@@ -13,12 +13,36 @@ echo "Starting clinical trial data pipeline..." > reports/pipeline_log.txt
 # Use either `$?` or `||` operator to check exit codes and stop on failure
 # Add a log entry for each notebook execution or failure
 jupyter nbconvert --execute --to notebook q4_exploration.ipynb
+jupError4=$?
+if [ $jupError4 -ne 0 ]; then
+    echo "Error" >> reports/pipeline_log.txt
+else
+    echo "Success" >> reports/pipeline_log.txt
+fi
 
 jupyter nbconvert --execute --to notebook q5_missing_data.ipynb
+jupError5=$?
+if [ $jupError5 -ne 0 ]; then
+    echo "Error" >> reports/pipeline_log.txt
+else
+    echo "Success" >> reports/pipeline_log.txt
+fi
 
 jupyter nbconvert --execute --to notebook q6_transformation.ipynb
+jupError6=$?
+if [ $jupError6 -ne 0 ]; then
+    echo "Error" >> reports/pipeline_log.txt
+else
+    echo "Success" >> reports/pipeline_log.txt
+fi
 
 jupyter nbconvert --execute --to notebook q7_aggregation.ipynb
+jupError7=$?
+if [ $jupError7 -ne 0 ]; then
+    echo "Error" >> reports/pipeline_log.txt
+else
+    echo "Success" >> reports/pipeline_log.txt
+fi
 
 
 echo "Pipeline complete!" >> reports/pipeline_log.txt

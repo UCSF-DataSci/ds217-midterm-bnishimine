@@ -1,2 +1,6 @@
 Starting clinical trial data pipeline...
+Success
+Success
+Success
+Success
 Pipeline complete!
