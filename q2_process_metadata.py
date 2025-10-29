@@ -71,7 +71,7 @@ def validate_config(config: dict) -> dict:
         guidelines['sample_data_max'] = False
     else:
         guidelines['sample_data_max'] = True
-    return
+    return guidelines
         
 
 
